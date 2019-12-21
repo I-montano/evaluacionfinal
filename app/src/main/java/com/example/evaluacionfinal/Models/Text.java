@@ -1,0 +1,23 @@
+package com.example.evaluacionfinal.Models;
+
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "texts")
+public class Text {
+
+    @PrimaryKey(autoGenerate = true)
+    public int id;
+
+    public String message;
+
+    public Text() {}
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+}
